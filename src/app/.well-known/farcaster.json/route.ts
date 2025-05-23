@@ -1,5 +1,5 @@
 export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL;
+  const appUrl = process.env.NEXT_PUBLIC_URL || 'https://the-way-of-code-miniapp.vercel.app';
 
   const config = {
     "accountAssociation": {
@@ -12,9 +12,9 @@ export async function GET() {
       name: "The Way of Code",
       iconUrl: `${appUrl}/icon.png`,
       homeUrl: appUrl,
-      imageUrl: `${appUrl}/frames/hello/opengraph-image`,
+      imageUrl: `${appUrl}/vibecoding.jpeg`,
       buttonTitle: "Launch Frame",
-      splashImageUrl: `${appUrl}/splash.png`,
+      splashImageUrl: `${appUrl}/icon.png`,
       splashBackgroundColor: "#f7f7f7",
     },
   };

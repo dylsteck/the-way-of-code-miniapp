@@ -5,14 +5,14 @@ const appUrl = process.env.NEXT_PUBLIC_URL || 'https://the-way-of-code-miniapp.v
 
 const frame = {
   version: "next",
-  imageUrl: `${appUrl}/opengraph-image`,
+  imageUrl: `${appUrl}/vibecoding.jpeg`,
   button: {
     title: "Launch Frame",
     action: {
       type: "launch_frame",
       name: "The Way of Code",
       url: appUrl,
-      splashImageUrl: `${appUrl}/splash.png`,
+      splashImageUrl: `${appUrl}/icon.png`,
       splashBackgroundColor: "#f7f7f7",
     },
   },
