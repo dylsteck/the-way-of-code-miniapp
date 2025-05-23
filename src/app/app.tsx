@@ -7,10 +7,8 @@ const Demo = dynamic(() => import("~/components/Demo"), {
   ssr: false,
 });
 
-export default function App(
-  { title }: { title?: string } = { title: "Frames v2 Demo" }
-) {
+export default function App() {
   ReactDOM.preconnect('https://auth.farcaster.xyz')
 
-  return <Demo title={title} />;
+  return <Demo />;
 }
