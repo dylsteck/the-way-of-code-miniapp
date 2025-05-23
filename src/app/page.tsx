@@ -1,18 +1,17 @@
 import { Metadata } from "next";
 import App from "./app";
-
-const appUrl = process.env.NEXT_PUBLIC_URL || 'https://the-way-of-code-miniapp.vercel.app';
+import { APP_URL } from "~/lib/utils";
 
 const frame = {
   version: "next",
-  imageUrl: `${appUrl}/vibecoding.jpeg`,
+  imageUrl: `${APP_URL}/vibecoding.jpeg`,
   button: {
-    title: "Launch Frame",
+    title: "Start Vibing",
     action: {
       type: "launch_frame",
       name: "The Way of Code",
-      url: appUrl,
-      splashImageUrl: `${appUrl}/icon.png`,
+      url: APP_URL,
+      splashImageUrl: `${APP_URL}/icon.png`,
       splashBackgroundColor: "#f7f7f7",
     },
   },

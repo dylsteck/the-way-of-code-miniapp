@@ -1,6 +1,6 @@
-export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL || 'https://the-way-of-code-miniapp.vercel.app';
+import { APP_URL } from "../../../lib/utils";
 
+export async function GET() {
   const config = {
     "accountAssociation": {
       "header": "eyJmaWQiOjYxNiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDVFNzlGNjkwY2NENDIwMDdENUEwYUQ2NzhDRDQ3NDc0MzM5NDAwRTMifQ",
@@ -10,11 +10,11 @@ export async function GET() {
     frame: {
       version: "1",
       name: "The Way of Code",
-      iconUrl: `${appUrl}/icon.png`,
-      homeUrl: appUrl,
-      imageUrl: `${appUrl}/vibecoding.jpeg`,
-      buttonTitle: "Launch Frame",
-      splashImageUrl: `${appUrl}/icon.png`,
+      iconUrl: `${APP_URL}/icon.png`,
+      homeUrl: APP_URL,
+      imageUrl: `${APP_URL}/vibecoding.jpeg`,
+      buttonTitle: "Start Vibing",
+      splashImageUrl: `${APP_URL}/icon.png`,
       splashBackgroundColor: "#f7f7f7",
     },
   };
